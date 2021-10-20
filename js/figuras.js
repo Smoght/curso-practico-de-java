@@ -53,15 +53,7 @@ function perimetroCuadrado(lado){
 function areaCuadrado(lado){
     return lado * lado;
 }
-console.groupEnd()
 
-console.group("Triangulo")
-function perimetroTriangulo(lado1, lado2, base){
-    return lado1 + lado2 + base;
-}
-function areaTriangulo(base, altura){
-    return (base * altura) / 2;
-}
 
 function calcularAreaCuadrado(){
     const input = document.getElementById("inputCuadrado");
@@ -79,4 +71,24 @@ function calcularPerimetroCuadrado (){
     const perimetro = areaCuadrado(value);
     alert("El area del cuadrado es " + perimetro)
 }
+console.groupEnd()
 
+// calculo para triangulo isoseles
+
+function alturaTriangulo(lado, base){
+    return Math.sqrt( lado ** 2 - ((base / 2)**2));
+
+}
+
+function calcularAlturaTriangulo(){
+    const ladoA = document.getElementById("inputladoA");
+    const valueA = ladoA.value;
+
+    const ladobase = document.getElementById("inputbase")
+    const valueBase = ladobase.value
+
+    const alturaIsoseles = alturaTriangulo(valueA, valueBase)
+
+    alert("la altura del triangulo es de " + alturaIsoseles + "cm.")
+
+}
