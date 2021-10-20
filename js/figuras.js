@@ -62,3 +62,21 @@ function perimetroTriangulo(lado1, lado2, base){
 function areaTriangulo(base, altura){
     return (base * altura) / 2;
 }
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = perimetroCuadrado(value)
+
+    alert("El area del cuadrado es " + area)
+
+}
+
+function calcularPerimetroCuadrado (){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimetro = areaCuadrado(value);
+    alert("El area del cuadrado es " + perimetro)
+}
+
