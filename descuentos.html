@@ -7,7 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <section>
+            <h2>Calcular el precio a pagar de tus productos</h2>
+        </section>
+        <section>
+            <form action="">
+                <label for="inputPrice">
+                    <p>Escribe el pecio de tu producto</p>
+                    <input type="number"id="inputPrice">
+                </label>
+                <label for="inputDiscount">
+                    <p>Escribe el descuento de tu producto</p>
+                    <input type="numero" id="inputDiscount">
+                </label><br><br>
+                <button type="button" onclick="priceDiscountbutton()"> Calcular el precio con descuento   </button>
+                <p id="resultPrice"></p>
+            </form>
+        </section>
+    </main>
 
     <script src="./js/descuentos.js"></script>
 </body>
