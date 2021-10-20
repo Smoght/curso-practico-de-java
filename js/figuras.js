@@ -1,3 +1,4 @@
+/*
 console.group("cuadrados");
 const ladoCuadrado = 5;
 console.log("Los lados del cuadrado miden " + ladoCuadrado + "cm.")
@@ -44,3 +45,20 @@ console.log("El diametro del circulo es de: " + diametro + "cm.")
 console.log("El perimetro del circulo es de: " + perimetro + "cm.")
 console.log("El area del circulo es de: " + area + "cm")
 console.groupEnd()
+*/
+console.group("Cuadrado")
+function perimetroCuadrado(lado){
+    return lado * 4;
+}
+function areaCuadrado(lado){
+    return lado * lado;
+}
+console.groupEnd()
+
+console.group("Triangulo")
+function perimetroTriangulo(lado1, lado2, base){
+    return lado1 + lado2 + base;
+}
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+}
