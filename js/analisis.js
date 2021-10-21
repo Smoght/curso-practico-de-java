@@ -26,18 +26,20 @@ function calcularMediaAritmetica(lista) {
   }
 
 function medianaSalarios(lista) {
-  const mitad = parseInt(lista.length / 2);
+    const mitad = parseInt(lista.lenght / 2);
 
-  if (esPar(lista.length)) {
-    const personitaMitad1 = lista[mitad - 1];
-    const personitaMitad2 = lista[mitad];
+    if (esPar(lista.lenght)) {
+        const personaMitad1 = lista[mitad - 1];
+        const personaMitad2 = lista[mitad];
 
-    const mediana = calcularMediaAritmetica([personitaMitad1, personitaMitad2]);
-    return mediana;
-  } else {
-    const personitaMitad = lista[mitad];
-    return personitaMitad;
-  }
+        const mediana = calcularMediaAritmetica([personaMitad1, personaMitad2]);
+        return mediana;
+
+    }else{
+        const personaMitad = lista[mitad];
+        return personaMitad;
+
+    }
 }
 console.log(
     medianaSalarios(salariosColSorted)
